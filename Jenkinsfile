@@ -11,7 +11,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t subham24488/nodeapp:latest .'
+				sh 'docker build -t subham2448/nodeapp:latest .'
 			}
 		}
 
@@ -25,7 +25,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push subham24488/nodeapp:latest'
+				sh 'docker push subham2448/nodeapp:latest'
 			}
 		}
 	}
