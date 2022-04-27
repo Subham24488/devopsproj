@@ -28,6 +28,11 @@ pipeline{
 				sh 'docker push subham2448/nodeapp:latest'
 			}
 		}
+		stage('Containarize the application'){
+			steps {
+				sh 'docker run -dp 8088:8088 subham2448/nodeapp'
+			}
+		}
 	}
 
 	post {
